@@ -3,12 +3,8 @@
 
 
 def add_integer(a, b=98):
-    """adds two integers
-
-    ARgs:
-        @a (int, float): oprand 1
-        @b (int, float): oprand 2
-
+    """Return the integer addition of a and b.
+    Float arguments are typecasted to ints before addition is performed
     Raises:
         TypeError: if either a or b is not an int or float
     """
