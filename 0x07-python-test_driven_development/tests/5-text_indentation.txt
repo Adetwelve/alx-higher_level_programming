@@ -39,3 +39,6 @@ Leadership?
 Software:
 <BLANKLINE>
 Enterprise
+
+>>> text_indentation("Africa leadership")
+Africa leadership
