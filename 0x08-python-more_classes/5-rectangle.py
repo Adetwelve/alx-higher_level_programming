@@ -66,4 +66,5 @@ class Rectangle():
         return 'Rectangle(' + a + ','' ' + b + ')'
 
     def __del__(self):
+        """Print a message for every deletion of Rectangle"""
         print("Bye rectangle...")
