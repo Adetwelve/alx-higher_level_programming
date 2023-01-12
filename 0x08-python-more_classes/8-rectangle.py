@@ -87,4 +87,4 @@ class Rectangle():
             raise TypeError('rect_2 must be an istance of Rectangle')
         if rect_1.area() >= rect_2.area():
             return rect_1
-        rect_2
+        return rect_2
