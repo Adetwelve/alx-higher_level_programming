@@ -29,7 +29,10 @@ True
 >>> my_list.print_sorted()
 [0, 2, 3, 6]
 
->>> my_list = MyList([3, 6, 9, -5])
+>>> my_list1 = MyList([3, 6, 9, -5])
 
->>> my_list.print_sorted()
+>>> my_list1.print_sorted()
 [-5, 3, 6, 9]
+
+>>> id(my_list1) == id(sorted(my_list1))
+False
