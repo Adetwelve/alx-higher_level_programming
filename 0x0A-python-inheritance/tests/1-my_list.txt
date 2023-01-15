@@ -29,6 +29,9 @@ True
 >>> my_list.print_sorted()
 [0, 2, 3, 6]
 
+>>> print(my_list)
+[3, 0, 6, 2]
+
 >>> my_list1 = MyList([3, 6, 9, -5])
 
 >>> my_list1.print_sorted()
