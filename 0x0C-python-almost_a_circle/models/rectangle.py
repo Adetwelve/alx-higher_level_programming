@@ -1,13 +1,14 @@
 #!/usr/bin/python3
 """This module create a class: Rectangl"""
+from models.base import Base
 
 
 class Rectangle(Base):
-    """Defines a nw rectangle"""
+    """Defines a new rectangle"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
         self.width = width
-        self.height = heigth
+        self.height = height
         self.x = x
         self.y = y
         super().__init__(id)
@@ -28,21 +29,21 @@ class Rectangle(Base):
     def height(self):
         return self.__height
 
-    @hight.setter
-    def width(self, width):
-        if type(hight) != int:
+    @height.setter
+    def height(self, height):
+        if type(height) != int:
             raise TypeError('height must be an intger')
         elif height <= 0:
             raise ValueError('height must be >= 0')
         self.__height = height
 
-     @property
-     def x(self):
-         return self.__x
+    @property
+    def x(self):
+        return self.__x
 
-     @x.setter
-     def x(self, x):
-         if type(x) != int:
+    @x.setter
+    def x(self, x):
+        if type(x) != int:
             raise TypeError('x must be an intger')
         elif x < 0:
             raise ValueError('x must be >= 0')
