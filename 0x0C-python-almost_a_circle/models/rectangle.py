@@ -97,7 +97,7 @@ class Rectangle(Base):
         """
         itr = 1
 
-	if (args) and len(args):
+        if (args) and len(args):
             for arg in args:
                 if itr == 1:
                     self.id = arg
