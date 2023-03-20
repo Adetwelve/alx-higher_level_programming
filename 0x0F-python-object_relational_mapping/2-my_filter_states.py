@@ -1,4 +1,4 @@
-#!/usr/bin/python3"
+#!/usr/bin/python3
 """A script that takes in an argument and displays all values in the states
    table of hbtn_0e_0_usa where name matches the argument.
 """
@@ -12,8 +12,10 @@ if __name__ == "__main__":
     cur.execute("SELECT * FROM states WHERE BINARY name = '{}'"
                 .format(sys.argv[4]))
 
-    states = cur.fetchone()
-    print(states)
+    states = cur.fetchall()
+
+    for state in states:
+        print(state)
 
     cur.close()
     db.close()
