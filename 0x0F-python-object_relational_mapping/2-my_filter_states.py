@@ -16,5 +16,5 @@ if __name__ == "__main__":
     states = cur.fetchone()
     print(states)
 
-    cur.close
+    cur.close()
     db.close()
