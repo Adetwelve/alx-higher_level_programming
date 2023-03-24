@@ -19,7 +19,7 @@ if __name__ == '__main__':
     session = Session()
 
     # Add state
-    new_state = State(name="Louiana")
+    new_state = State(name="Louisiana")
     session.add(new_state)
     session.commit()
 
