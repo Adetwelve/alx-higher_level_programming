@@ -20,8 +20,8 @@ if __name__ == '__main__':
     session = Session()
 
     # query data of all element in the state
-    states_a = session.query(State).filter(State.name.like("%a%"))
-    .delete(synchronize_session='fetch')
+    states = session.query(State).filter(State.name.like("%a%"))\
+                    .delete(synchronize_session='fetch')
     session.commit()
 
     session.close()
