@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Lists all State objects from database hbtn_0e_6_us
+"""a script that prints the State object with the name passed as 
+   argument from the database hbtn_0e_6_usa
 """
 from model_state import Base, State
 from sqlalchemy import create_engine
@@ -24,6 +25,7 @@ if __name__ == '__main__':
     # print query
     if state:
         print(state.id)
-    print("Not found")
+    else:
+        print("Not found")
 
     session.close()
